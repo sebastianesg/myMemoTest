@@ -1,0 +1,34 @@
+.carta-box {
+  width: 100px;
+  height: 100px;
+  position: relative;
+
+}
+
+.carta {
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+
+.cara {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.cara.detras {
+  transform: rotateY(180deg);
+}
+
+.a {
+  grid-column: x1;
+}
+
+.b {
+  grid-column: x2;
+}
+#click:checked + label > div {
+  transform: rotateY(180deg);
+}
+#click{
+  display: none;
+}
